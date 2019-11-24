@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Banner from './banner.js';
+
+const tableStyle = function(x) { 
+  return {
+    borderCollapse: 'collapse',
+    width: x
+  };
+};
+
+var outerTableStyle = tableStyle('75%');
+var innerTableStyle = tableStyle('100%');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <table style={outerTableStyle}>
+    <tbody>
+    <tr>
+    <td>
+    <table style={innerTableStyle}>
+    <tbody>
+
+      <Banner/>
+
+    </tbody>
+    </table>  
+    </td>
+    </tr>
+    </tbody>
+    </table>
     </div>
   );
 }
