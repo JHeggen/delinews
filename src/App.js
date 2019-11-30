@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './banner.js';
+import Menu from './menu.js';
 
 const tableStyle = function(x) { 
   return {
@@ -22,6 +23,8 @@ function App() {
     <tbody>
 
       <Banner/>
+      <Menu/>
+
 
     </tbody>
     </table>  
