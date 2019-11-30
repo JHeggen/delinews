@@ -9,7 +9,7 @@ var imageStyle = {
     height: '200px'
 };
 
-function Banner() {
+function Menu() {
   return (
     <tr>
     <td align="center" valign="top" style="background:#ffffff repeat top/cover;background-color:#ffffff;background-repeat:repeat;background-position:top;background-size:cover;border-top:0;border-bottom:0;padding-top:9px;padding-bottom:0">
@@ -27,4 +27,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Menu;
