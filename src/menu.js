@@ -1,6 +1,7 @@
 import React from 'react';
-import Title from './title.js';
-import MenuItems from './menuItems.js';
+import Title from './menu/title.js';
+import MenuItems from './menu/menuItems.js';
+import Footnotes from './menu/footnotes.js';
 
 var tableStyle = {
   paddingTop: '9px'
@@ -29,7 +30,7 @@ function Menu() {
 
                               <Title />
                               <MenuItems/>
-
+                              <Footnotes/>
                           
                           
                               </td>

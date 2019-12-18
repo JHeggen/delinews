@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './banner.js';
 import Menu from './menu.js';
+import Footer from './footer.js';
 
 const tableStyle = function(x) { 
   return {
@@ -24,6 +25,7 @@ function App() {
 
       <Banner/>
       <Menu/>
+      <Footer/>
 
 
     </tbody>
