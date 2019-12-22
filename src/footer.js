@@ -1,5 +1,7 @@
 import React from 'react';
-import Socials from './footer/socials.js'
+import Socials from './footer/socials.js';
+import HorizontalRule from './footer/hr.js';
+import FinePrint from './footer/fineprint.js';
 
 var footerBackground = {
     backgroundColor: '#fafafa',
@@ -17,8 +19,8 @@ function Footer() {
     <tr>
     <td>
         <Socials />
-
-        
+        <HorizontalRule />
+        <FinePrint />
     </td>
     </tr>
     </tbody>

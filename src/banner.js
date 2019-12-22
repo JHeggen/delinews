@@ -2,7 +2,8 @@ import React from 'react';
 
 var bannerStyle = {
     background: 'url(http://fraserparkrestaurant.com/img/fpr_banner.png)',
-    backgroundSize : 'cover'
+    backgroundSize : 'cover',
+    minWidth: '950px'
 };
 
 var imageStyle = {

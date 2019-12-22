@@ -9,13 +9,18 @@ var titleStyle = {
     paddingTop: '20px'
 }
 
+var container = {
+    width: '800px'
+}
+
 var menuItemStyle = {
     textAlign: 'left',
     padding: '10px'
 }
 
 var alignLeft = {
-    textAlign: 'left'
+    width: '420px',
+    textAlign: 'right'
 }
 
 var redLineStyle = {
@@ -26,7 +31,35 @@ var redLineStyle = {
 
 const items = [
     {
+        dayOfWeek : "Montag",
+        mealOne : "Sloppy Joe mit Fries or Soup or Salad",
+        mealTwo : "Curry Chicken mit Reis und Veggies",
+        soupOne : "Spinach, Mushroom & Barley",
+        soupTwo : "Tomato, Corn & Black Beans"
+    },
+    {
+        dayOfWeek : "Dienstag",
+        mealOne : "Sloppy Joe mit Fries or Soup or Salad",
+        mealTwo : "Curry Chicken mit Reis und Veggies",
+        soupOne : "Spinach, Mushroom & Barley",
+        soupTwo : "Tomato, Corn & Black Beans"
+    },
+    {
         dayOfWeek : "Mittwoch",
+        mealOne : "Sloppy Joe mit Fries or Soup or Salad",
+        mealTwo : "Curry Chicken mit Reis und Veggies",
+        soupOne : "Spinach, Mushroom & Barley",
+        soupTwo : "Tomato, Corn & Black Beans"
+    },
+    {
+        dayOfWeek : "Donnerstag",
+        mealOne : "Sloppy Joe mit Fries or Soup or Salad",
+        mealTwo : "Curry Chicken mit Reis und Veggies",
+        soupOne : "Spinach, Mushroom & Barley",
+        soupTwo : "Tomato, Corn & Black Beans"
+    },
+    {
+        dayOfWeek : "Freitag",
         mealOne : "Sloppy Joe mit Fries or Soup or Salad",
         mealTwo : "Curry Chicken mit Reis und Veggies",
         soupOne : "Spinach, Mushroom & Barley",
@@ -36,7 +69,7 @@ const items = [
 
 const listItems = items.map((item, i) =>
 /* fix styles on container .... */
-<div>
+<div style={container}>
         <tr>
             <td style={titleStyle}>
                 <h3>{item.dayOfWeek}
@@ -62,25 +95,8 @@ function MenuItems() {
   return (
     <table width='800px' style={menuMargin}>
         <tbody>
-        <tr>
-            <td style={titleStyle}>
-                <h3>Mittwoch
-                    <div style={redLineStyle}></div>
-                </h3>
-            </td>
-        </tr>
-
-        <tr>
-            <td style={menuItemStyle}>
-                <span>Sloppy Joe mit Fries or Soup or Salad</span> <br/>
-                <span>Curry Chicken mit Reis und Veggies</span>
-            </td>
-            <td style={alignLeft}>
-                <span>Spinach, Mushroom & Barley</span> <br/>
-                <span>Tomato, Corn & Black Beans</span>
-            </td>
-        </tr>
         {listItems}
+
         </tbody>
 
     </table>
