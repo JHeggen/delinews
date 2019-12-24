@@ -68,27 +68,26 @@ const items = [
 ];
 
 const listItems = items.map((item, i) =>
-/* fix styles on container .... */
-<div style={container}>
-        <tr>
-            <td style={titleStyle}>
-                <h3>{item.dayOfWeek}
-                    <div style={redLineStyle}></div>
-                </h3>
-            </td>
-        </tr>
+    <div style={container}>
+            <tr>
+                <td style={titleStyle}>
+                    <h3>{item.dayOfWeek}
+                        <div style={redLineStyle}></div>
+                    </h3>
+                </td>
+            </tr>
 
-        <tr>
-            <td style={menuItemStyle}>
-                <span>{item.mealOne}</span> <br/>
-                <span>{item.mealTwo}</span>
-            </td>
-            <td style={alignLeft}>
-                <span>{item.soupOne}</span> <br/>
-                <span>{item.soupTwo}</span>
-            </td>
-        </tr>
-</div>
+            <tr>
+                <td style={menuItemStyle}>
+                    <span>{item.mealOne}</span> <br/>
+                    <span>{item.mealTwo}</span>
+                </td>
+                <td style={alignLeft}>
+                    <span>{item.soupOne}</span> <br/>
+                    <span>{item.soupTwo}</span>
+                </td>
+            </tr>
+    </div>
 );
 
 function MenuItems() {
